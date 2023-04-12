@@ -38,6 +38,7 @@ body {
   right: 0;
   /* margin-top: -15px; */
   z-index: 9999;
+  padding-right: 56px;
 }
 
 .navbar .navbar-logo img {
@@ -105,7 +106,7 @@ body {
   background-size: cover;
   background-position: center;
   position: relative;
-  width: 100%;
+  /* width: 100%; */
   z-index: 0;
 }
 
@@ -235,21 +236,32 @@ body {
   flex-wrap: wrap;
   margin-top: 3rem;
   justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
 }
 
 .menu .row .menu-card {
   text-align: center;
   padding-bottom: 4rem;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  border: 1px solid #fff;
+  /* background-color: #fff; */
 }
 
 .menu .row .menu-card {
   width: 325px;
-  height: 480px;
+  height: 380px;
   padding-top: 10px;
   margin-bottom: 20px;
   /* display: grid; */
 }
 
+.menu .row .menu-card .menu-image {
+  width: 300px;
+  height: 245px;
+  margin: 0 auto;
+  overflow: hidden;
+}
 .menu .row .menu-card .menu-image img {
   width: 100%;
   height: 100%;
@@ -261,6 +273,34 @@ body {
 
 .menu .row .menu-card .menu-image img:hover {
   transform: scale(1.1);
+}
+
+.menu .row .menu-card .menu-info h3 {
+  /* width: 60%; */
+  color: var(--primary);
+  margin: 10px auto 10px auto;
+  font-size: 25px;
+}
+
+.menu .row .menu-card .menu-info h4 {
+  text-align: center;
+  font-size: 18px;
+}
+
+.menu .row .menu-card .menu-info .menu-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #010101;
+  background-color: #fff;
+  padding: 8px 10px;
+  margin: 0 80px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.menu .row .menu-card .menu-info .menu-btn:hover {
+  background-color: #9e9b9b;
 }
 
 /* Menu Section End */
