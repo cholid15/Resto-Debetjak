@@ -19,7 +19,7 @@ body {
   font-family: 'Poopins', sans-serif;
   background-color: var(--bg);
   color: #fff;
-  min-height: 3000px;
+  min-height: 5000px;
 }
 
 /* ------------------------------------------------------- */
@@ -165,19 +165,22 @@ body {
 /* ------------------------------------------------------- */
 /* About Section Start */
 .about,
-.menu {
+.menu,
+.owner {
   padding: 8rem 7% 1.4rem;
 }
 
 .about h2,
-.menu h2 {
+.menu h2,
+.owner h2 {
   text-align: center;
   font-size: 2.6rem;
   margin-bottom: 3rem;
 }
 
 .about h2 span,
-.menu h2 span {
+.menu h2 span,
+.owner h2 span {
   color: var(--primary);
 }
 
@@ -193,6 +196,13 @@ body {
 /* .about .row .about-img {
   flex: 1 1 40rem;
 } */
+
+@media screen and (max-width: 768px) {
+  .about-img,
+  .about .row .about-img img {
+    width: 100%;
+  }
+}
 
 .about .row .content {
   flex: 1 1 35rem;
@@ -227,8 +237,19 @@ body {
   max-width: 30rem;
   margin: auto;
   font-weight: 100;
-  line-height: 1.6;
   margin-top: -20px;
+  font-size: 20px;
+  font-family: poppins, serif;
+  margin-top: 30px;
+}
+
+.menu .minuman {
+  margin-bottom: -15px;
+}
+
+.menu p span {
+  color: var(--primary);
+  font-weight: bold;
 }
 
 .menu .row {
@@ -246,15 +267,25 @@ body {
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
   border: 1px solid #fff;
   /* background-color: #fff; */
-}
-
-.menu .row .menu-card {
   width: 325px;
   height: 380px;
   padding-top: 10px;
   margin-bottom: 20px;
-  /* display: grid; */
+  margin-top: -25px;
 }
+
+@media screen and (max-width: 500px) {
+  .menu .menu-card,
+  .menu .row .menu-card .menu-image,
+  .menu .row .menu-card .menu-image img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* .menu .row .menu-card {
+  
+  /* display: grid; */
 
 .menu .row .menu-card .menu-image {
   width: 300px;
@@ -305,6 +336,11 @@ body {
 
 /* Menu Section End */
 /* ------------------------------------------------------- */
+/* Owner Section Start */
+
+/* Owner Section End */
+/* ------------------------------------------------------- */
+
 /* Media Queries Start */
 /* Laptop */
 @media (max-width: 1336px) {
