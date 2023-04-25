@@ -221,6 +221,7 @@ body {
   font-weight: 300;
   line-height: 1.6;
 }
+
 /* 
 
 .about .row .content p {
@@ -308,7 +309,7 @@ body {
   /* width: 60%; */
   color: var(--primary);
   margin: 10px auto 10px auto;
-  font-size: 25px;
+  font-size: 10px;
 }
 
 .menu .row .menu-card .menu-info h4 {
@@ -344,11 +345,16 @@ body {
 
 .contact .row .map {
   flex: 1 1 45rem;
-  width: 100%;
+  /* width: 100%; */
   object-fit: cover;
   display: flex;
 }
 
+@media screen and (max-width: 768px) {
+  .contact .row .map {
+    width: 100%;
+  }
+}
 .contact .row form {
   flex: 1 1 45rem;
   padding: 5rem 2rem;
@@ -362,6 +368,7 @@ body {
   background-color: var(--bg);
   border: 1px solid #eee;
   padding-left: 2rem;
+  border-radius: 20px;
 }
 
 .contact .row form .input-group input {
@@ -370,6 +377,7 @@ body {
   font-size: 1.7rem;
   background: none;
   color: #fff;
+  border: none;
 }
 
 .contact .row form .btn {
@@ -381,6 +389,7 @@ body {
   background-color: var(--primary);
   cursor: pointer;
   border-radius: 50px;
+  border: 1px solid #eee;
 }
 /* Kontak Section End *
 /* ------------------------------------------------------- */
@@ -436,9 +445,9 @@ footer .credit a {
     font-size: 75%;
   }
 
-  .contact .row {
-    display: flex;
-  }
+  /* .contact .row {
+    flex-wrap: wrap;
+  } */
 }
 
 /* Tablet */
@@ -508,6 +517,10 @@ footer .credit a {
 .about .row .content p {
   font-size: 1.6rem;
 }
+
+.about .row .content a {
+  font-size: 13px;
+}
 /* .about .row .about-img 
 
 .about .row .content p {
@@ -517,9 +530,9 @@ footer .credit a {
 
 /* ----------------------- */
 /* kontak start */
-.contact .row {
+/* .contact .row {
   flex-wrap: wrap;
-}
+} */
 
 .contact .row .map {
   height: 30rem;
@@ -536,7 +549,7 @@ footer .credit a {
 }
 
 .menu .row .menu-card .menu-info h3 {
-  font-size: 30px;
+  font-size: 23px;
 }
 .menu .row .menu-card .menu-info h4 {
   font-size: 20px;
@@ -574,6 +587,10 @@ footer .credit a {
   .menu .row .menu-card .menu-info .menu-btn {
     font-size: 15px;
     padding: 10px 11px;
+  }
+
+  .contact .row {
+    flex-wrap: wrap;
   }
 }
 /* Media Queries End */
