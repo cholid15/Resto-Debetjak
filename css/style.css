@@ -380,7 +380,7 @@ body {
   border: none;
 }
 
-.contact .row form .btn {
+/* .contact .row form .btn {
   margin-top: 3rem;
   display: inline-block;
   padding: 1rem 3rem;
@@ -390,6 +390,21 @@ body {
   cursor: pointer;
   border-radius: 50px;
   border: 1px solid #eee;
+} */
+
+.contact .row form a {
+  margin-top: 3rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
+  color: #fff;
+  background-color: var(--primary);
+  border-radius: 50px;
+  border: 1px solid #eee;
+}
+
+.contact .row form a:hover {
+  background-color: #dfb386;
 }
 /* Kontak Section End *
 /* ------------------------------------------------------- */
