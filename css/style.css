@@ -549,10 +549,6 @@ footer .credit a {
   flex-wrap: wrap;
 } */
 
-.contact .row .map {
-  height: 30rem;
-}
-
 .contact .row form {
   padding-top: 0;
 }
@@ -606,6 +602,10 @@ footer .credit a {
 
   .contact .row {
     flex-wrap: wrap;
+  }
+
+  .contact .row .map {
+    height: 30rem;
   }
 }
 /* Media Queries End */
