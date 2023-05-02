@@ -420,6 +420,7 @@ footer {
 
 footer .socials {
   padding: 1rem 0;
+  margin-bottom: 12px;
 }
 
 footer .socials a {
@@ -637,6 +638,14 @@ footer .credit a {
 
   .contact .row .map {
     height: 30rem;
+  }
+
+  footer .links a {
+    font-size: 13px;
+  }
+
+  footer .credit p {
+    font-size: 11px;
   }
 }
 /* Media Queries End */
