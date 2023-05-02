@@ -603,11 +603,16 @@ footer .credit a {
     font-size: 13px;
   }
 
+  .about h2,
+  .menu h2,
+  .contact h2 {
+    font-size: 35px;
+  }
   .about .row .content h3 {
-    font-size: 30px;
+    font-size: 25px;
   }
   .about .row .content p {
-    font-size: 22px;
+    font-size: 21px;
   }
   .menu .row .menu-card {
     width: 300px;
